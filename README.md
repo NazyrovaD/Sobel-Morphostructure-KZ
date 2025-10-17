@@ -9,21 +9,39 @@ This repository contains the Google Earth Engine (GEE) scripts and auxiliary mat
 ## 🔍 Description
 The workflow implements the Sobel operator for regional morphostructural zoning using DEMs (MERIT, SRTM, and ALOS).  
 It includes:
-- Gradient computation (Sobel, Laplacian, and Canny filters)  
-- Thresholding of top 15% gradient values  
-- Orientation and azimuthal analysis  
-- Enrichment analysis relative to ore deposits  
+- Gradient computation (Sobel, Laplacian, and Canny filters)
+- Thresholding of top 15% gradient values
+- Orientation and azimuthal analysis
+- Enrichment analysis relative to ore deposits
 - Visualization and export steps
 
 ---
 
-## 📜 License
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+## 📁 Repository Structure
+/scripts/ → Google Earth Engine (GEE) JavaScript files
+/figures/ → Output figures and gradient maps
+/data/ → Reference fault and deposit datasets (metadata only)
+README.md → This documentation file
+LICENSE → MIT License file
+
+---
+
+## 🧭 Study Reference
+This repository supports the publication:  
+> *Nazyrova D., Kayukov P., Berkinbaev G., Askarov S., Temirbekov N., Temirbekov A., Kasenov S., Temirbekova L.*  
+> **Automated Sobel-Based Morphostructural Analysis and Metallogenic Interpretation of the East Kazakhstan Orogenic Province** (Submitted to *MDPI Geosciences*, 2025).
+
+---
+
+## 🧠 Citation
+If you use this workflow, please cite the article above or acknowledge this repository.
 
 ---
 
 ## 📫 Contact
 **Corresponding author:**  
-Dilyara Nazyrova (ECOSERVICE-S LLP, East Kazakhstan)  
-📧 *[your_email_here]*
+Dilyara Nazyrova  
+📧 *nazyrovadilyara@gmail.com*  
+ECOSERVICE-S LLP, Kazakhstan
+
 
