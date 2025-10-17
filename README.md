@@ -19,6 +19,8 @@ It includes:
 
 ## 📁 Repository Structure
 /scripts/ → Google Earth Engine (GEE) JavaScript files
+  - `SOBEL.js` — DEM-based Sobel gradient computation and orientation analysis  
+  - `ENRICHMENT.js` — Quantitative enrichment and distance analysis of deposits within Sobel zones
 /figures/ → Output figures and gradient maps
 /data/ → Reference fault and deposit datasets (metadata only)
 README.md → This documentation file
