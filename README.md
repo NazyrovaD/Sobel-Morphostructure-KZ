@@ -57,7 +57,7 @@ It includes:
 
 If you use this code or materials in your research, please cite:
 
-> “Automated Sobel-Based Morphostructural Analysis and Metallogenic Interpretation Using DEM Data for East Kazakhstan”, *MDPI Geosciences*, 2025 (in review).
+> “Automated Morphostructural Analysis of Digital Elevation Models Using the Sobel Gradient Operator: A Case Study from East Kazakhstan”, *MDPI Geosciences*, 2025 (in review).
 
 ---
 
