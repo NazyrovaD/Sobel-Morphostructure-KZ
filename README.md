@@ -2,48 +2,75 @@
 
 **Automated morphostructural analysis using Sobel operator and DEM data for East Kazakhstan**
 
-This repository contains the Google Earth Engine (GEE) scripts and auxiliary materials used for automated detection of morphostructural lineaments based on the Sobel gradient operator.
+This repository provides the Google Earth Engine (GEE) scripts and supporting materials used in the morphostructural analysis of East Kazakhstan based on the Sobel gradient operator.
 
 ---
 
-## 🔍 Description
-The workflow implements the Sobel operator for regional morphostructural zoning using DEMs (MERIT, SRTM, and ALOS).  
+## 🧭 Description
+
+The workflow implements the Sobel operator for regional morphostructural zoning using DEMs (MERIT, SRTM, and ALOS).
+
 It includes:
 - Gradient computation (Sobel, Laplacian, and Canny filters)
 - Thresholding of top 15% gradient values
 - Orientation and azimuthal analysis
+- Validation against known fault structures
 - Enrichment analysis relative to ore deposits
-- Visualization and export steps
+- Visualization and export stages
 
 ---
 
-## 📁 Repository Structure
-/scripts/ → Google Earth Engine (GEE) JavaScript files
-  - `SOBEL.js` — DEM-based Sobel gradient computation and orientation analysis  
-  - `ENRICHMENT.js` — Quantitative enrichment and distance analysis of deposits within Sobel zones
-/figures/ → Output figures and gradient maps
-/data/ → Reference fault and deposit datasets (metadata only)
-README.md → This documentation file
-LICENSE → MIT License file
+## 🗂️ Repository Structure
+
+├── scripts/
+│ ├── SOBEL.js # Main Sobel morphostructural workflow
+│ ├── ENRICHMENT.js # Enrichment analysis of deposits vs Sobel zones
+│
+├── figures/
+│ ├── Figure1_AOI_Map.png # Study area (East Kazakhstan)
+│ ├── Figure4a_Sobel_Gradient.png # Sobel gradient magnitude
+│ ├── Figure4b_Sobel_TopZone.png # Top-15% Sobel gradient mask
+│ ├── Figure4c_Sobel_Orientation.png # Orientation map (0–180°)
+│ ├── Figure4d_Orientation_Rose.png # Rose diagram of Sobel lineaments
+│ ├── Figure5_Enrichment_Curve.png # Enrichment curve (Deposits vs Sobel zones)
+│
+├── LICENSE
+└── README.md
+
 
 ---
 
-## 🧭 Study Reference
-This repository supports the publication:  
-> *Nazyrova D., Kayukov P., Berkinbaev G., Askarov S., Temirbekov N., Temirbekov A., Kasenov S., Temirbekova L.*  
-> **Automated Sobel-Based Morphostructural Analysis and Metallogenic Interpretation of the East Kazakhstan Orogenic Province** (Submitted to *MDPI Geosciences*, 2025).
+## 🖼️ Figures
+
+| File | Description |
+|------|--------------|
+| `Figure1_AOI_Map.png` | Study area and regional context of East Kazakhstan. |
+| `Figure4a_Sobel_Gradient.png` | Sobel gradient magnitude derived from MERIT DEM (90 m). |
+| `Figure4b_Sobel_TopZone.png` | Binary mask of the top 15% gradient magnitudes (active morphostructural zones). |
+| `Figure4c_Sobel_Orientation.png` | Orientation (0–180°) of Sobel-derived lineaments. |
+| `Figure4d_Orientation_Rose.png` | Rose diagram summarizing azimuthal distribution of lineaments. |
+| `Figure5_Enrichment_Curve.png` | Enrichment curve showing relationship between deposits and Sobel zones. |
 
 ---
 
-## 🧠 Citation
-If you use this workflow, please cite the article above or acknowledge this repository.
+## 🧩 How to Cite
+
+If you use this code or materials in your research, please cite:
+
+> “Automated Sobel-Based Morphostructural Analysis and Metallogenic Interpretation Using DEM Data for East Kazakhstan”, *MDPI Geosciences*, 2025 (in review).
 
 ---
 
-## 📫 Contact
-**Corresponding author:**  
-Dilyara Nazyrova  
-📧 *nazyrovadilyara@gmail.com*  
-ECOSERVICE-S LLP, Kazakhstan
+## ⚙️ License
+
+This repository is released under the **MIT License**.  
+You are free to use, modify, and distribute it with proper attribution.
+
+---
+
+## 🌐 Contact
+
+**Corresponding author:** nazyrovadilyara@gmail.com
+
 
 
